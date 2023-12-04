@@ -1,0 +1,64 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.bg-faq {
+    background-color: rgb(250, 247, 243);
+}
+
+.faq-heading2 {
+    position: relative;
+}
+
+.faq-heading1 {
+    font-weight: 700;
+}
+
+.faq-heading2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+.rotate-icon {
+    transition: transform 0.4s ease-in-out;
+}
+
+.rotate-icon.down {
+    transform: rotate(180deg);
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-body {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card{
+    box-sizing: border-box;
+    border: none;
+}
+
+.card button{
+    text-align: start;
+}
+
+.question:hover {
+    color: #eb5d1e;
+    transition: 0.2s ease-in-out;
+}
